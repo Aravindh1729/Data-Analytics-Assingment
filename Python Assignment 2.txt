@@ -1,0 +1,83 @@
+1) write a python program to enter three number and print the greatest number 
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+
+if num1 > num2 and num1 > num3:
+    greatest = num1
+elif num2 > num1 and num2 > num3:
+    greatest = num2
+else:
+    greatest = num3
+
+
+print("The greatest number is", greatest)
+
+2) write a python program to enter three number and print the smallest number 
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if num1 < num2 and num1 < num3:
+    smallest = num1
+elif num2 < num1 and num2 < num3:
+    smallest = num2
+else:
+    smallest = num3
+
+print("The smallest number is", smallest)
+
+3) write a python program to calculate the root of quadratic equation 
+import cmath
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+discriminant = (num2**2) - (4*num1*num3)
+
+a = (-num2-cmath.sqrt(discriminant))/(2*num1)
+b = (-num2+cmath.sqrt(discriminant))/(2*num1)
+print('The solution are {0} and {1}'.format(a,b))
+
+4) write a python program to enter a number between (1-7) and print the respective day of the week
+day= int(input("Enter a number 1-7 : "))
+
+if (day==1):
+    print(day," is Sunday")
+elif (day==2):
+    print(day," is Monday")
+elif (day==3):
+    print(day," is Tuesday")
+elif (day==4):
+    print(day," is Wednesday")
+elif (day==5):
+    print(day," is Thursday")
+elif (day==6):
+    print(day," is Friday")
+elif (day==7):
+    print(day," is Saturday")
+else:
+    print("Invalid input! Please enter a number between 1 and 7.")
+	
+5) write a python program to enter two number and print greatest number
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+
+if num1 > num2:
+    print("The greatest number is:", num1)
+else:
+    print("The greatest number is:", num2)
+	
+6) write a python program to enter two number and print smallest number
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+
+if num1 < num2:
+    print("The smallest number is:", num1)
+else:
+    print("The smallest number is:", num2)
+
